@@ -1,0 +1,24 @@
+:root{--bg:#0e1117;--card:#161b22;--ink:#f0f2f5;--muted:#a3abb8;--gold:#e8b130;--red:#ff4b4b;--purple:#4a1d96;--purple-line:#7e3ff2;--green:#4ade80;--green-bg:#12301f;--line:#2a313c}
+*{box-sizing:border-box}
+html{font-family:"Source Sans 3","Source Sans Pro",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:18px}
+body{margin:0 auto;max-width:46rem;padding:1rem 1.25rem 3rem}
+header{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:baseline;padding-bottom:.75rem;border-bottom:1px solid var(--line)}
+.brand{font-weight:800;font-size:1.6rem;letter-spacing:-.02em;text-decoration:none;color:var(--ink)}
+.brand span{color:var(--gold)}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1rem;font-size:.9rem}
+nav a{color:var(--muted);text-decoration:none;padding-bottom:2px}nav a:hover{color:var(--ink)}
+nav a[aria-current]{color:var(--red);font-weight:600;border-bottom:2px solid var(--red)}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.15;letter-spacing:-.02em;font-weight:800;margin:2rem 0 1rem;color:var(--ink)}
+h2{font-size:1.35rem;color:var(--gold);margin:2.2rem 0 .5rem}
+h3{font-size:1.05rem;color:var(--ink);margin:1.2rem 0 .1rem}
+p,li{max-width:64ch}.lead{font-size:1.15rem;color:var(--gold);font-weight:600}
+a{color:#7cb7ff}a:focus-visible,.btn:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.btn{display:inline-block;background:var(--purple);color:#fff;padding:.7rem 1.3rem;border:1px solid var(--purple-line);border-radius:8px;text-decoration:none;font-weight:700}
+.btn:hover{background:#5b27b3}
+.note{background:var(--green-bg);color:var(--green);padding:.8rem 1rem;border-radius:8px;border:1px solid #1d4d31}
+.bar{margin:1.8rem 0}.bar div{display:flex;height:3rem;border-radius:8px;overflow:hidden;border:1px solid var(--line)}
+.bar span{display:block}.keep{background:var(--green);color:#06210f;padding:.55rem .8rem;font-weight:800;white-space:nowrap}.fee{background:var(--gold)}.spr{background:var(--purple-line)}
+figcaption{font-size:.85rem;color:var(--muted);margin-top:.5rem}
+ul{padding-left:1.2rem}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);font-style:italic}
+footer a{font-style:normal}
