@@ -1,24 +1,33 @@
-:root{--bg:#0e1117;--card:#161b22;--ink:#f0f2f5;--muted:#a3abb8;--gold:#e8b130;--red:#ff4b4b;--purple:#4a1d96;--purple-line:#7e3ff2;--green:#4ade80;--green-bg:#12301f;--line:#2a313c}
+:root{--bg:#1c1c1c;--card:#2b2b2b;--ink:#d3d3d3;--muted:#9a9a9a;--gold:#d4af37;--red:#ff4b4b;--purple:#4a148c;--purple-hi:#6a1b9a;--green:#4caf50;--orange:#ff9800;--line:#3a3a3a}
 *{box-sizing:border-box}
-html{font-family:"Source Sans 3","Source Sans Pro",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:18px}
-body{margin:0 auto;max-width:46rem;padding:1rem 1.25rem 3rem}
-header{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:baseline;padding-bottom:.75rem;border-bottom:1px solid var(--line)}
-.brand{font-weight:800;font-size:1.6rem;letter-spacing:-.02em;text-decoration:none;color:var(--ink)}
-.brand span{color:var(--gold)}
-nav{display:flex;flex-wrap:wrap;gap:.25rem 1rem;font-size:.9rem}
-nav a{color:var(--muted);text-decoration:none;padding-bottom:2px}nav a:hover{color:var(--ink)}
-nav a[aria-current]{color:var(--red);font-weight:600;border-bottom:2px solid var(--red)}
-h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.15;letter-spacing:-.02em;font-weight:800;margin:2rem 0 1rem;color:var(--ink)}
-h2{font-size:1.35rem;color:var(--gold);margin:2.2rem 0 .5rem}
-h3{font-size:1.05rem;color:var(--ink);margin:1.2rem 0 .1rem}
-p,li{max-width:64ch}.lead{font-size:1.15rem;color:var(--gold);font-weight:600}
-a{color:#7cb7ff}a:focus-visible,.btn:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
-.btn{display:inline-block;background:var(--purple);color:#fff;padding:.7rem 1.3rem;border:1px solid var(--purple-line);border-radius:8px;text-decoration:none;font-weight:700}
-.btn:hover{background:#5b27b3}
-.note{background:var(--green-bg);color:var(--green);padding:.8rem 1rem;border-radius:8px;border:1px solid #1d4d31}
-.bar{margin:1.8rem 0}.bar div{display:flex;height:3rem;border-radius:8px;overflow:hidden;border:1px solid var(--line)}
-.bar span{display:block}.keep{background:var(--green);color:#06210f;padding:.55rem .8rem;font-weight:800;white-space:nowrap}.fee{background:var(--gold)}.spr{background:var(--purple-line)}
+html{font-family:"Source Sans 3","Source Sans Pro",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px}
+body{margin:0 auto;max-width:970px;padding:1rem 1.25rem 3rem}
+header{display:flex;flex-wrap:wrap;gap:.5rem 1.75rem;align-items:baseline;padding-bottom:.6rem;border-bottom:1px solid var(--line)}
+.brand{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:2.2rem;letter-spacing:-1px;font-weight:800;text-decoration:none;color:var(--ink)}
+.brand span{font-weight:300;color:var(--gold)}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.1rem;font-size:.9rem}
+nav a{color:var(--ink);text-decoration:none;padding-bottom:3px}nav a:hover{color:var(--gold)}
+nav a[aria-current]{color:var(--red);border-bottom:2px solid var(--red)}
+h1,h2,h3{color:var(--gold)}
+h1{font-size:clamp(1.8rem,5vw,2.4rem);line-height:1.15;letter-spacing:-.5px;font-weight:700;margin:2rem 0 1rem}
+h2{font-size:1.4rem;margin:2.2rem 0 .5rem}
+h3{font-size:1.1rem;margin:0 0 .25rem}
+p,li{max-width:78ch}.lead{font-size:1.15rem;font-weight:600;color:var(--gold)}
+a{color:#7cb7ff}a:focus-visible,.btn:focus-visible,.cafecito-badge:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.btn{display:inline-block;background:var(--purple);color:#fff;padding:10px 20px;border-radius:6px;border:1px solid var(--purple);text-decoration:none;font-weight:bold;transition:all .3s ease}
+.btn:hover{background:var(--purple-hi);border-color:var(--gold)}
+.card{background:var(--card);padding:15px;border-radius:6px;margin-bottom:15px;border-left:4px solid var(--gold)}
+.card p{margin:0}
+.warn{background:var(--card);padding:15px;border-radius:6px;border-left:4px solid var(--orange)}
+.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{text-align:left;padding:.55rem .7rem;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--gold)}
+.bar{margin:1.8rem 0}.bar div{display:flex;height:3rem;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+.bar span{display:block}.keep{background:var(--green);color:#0b2410;padding:.55rem .8rem;font-weight:800;white-space:nowrap}.fee{background:var(--gold)}.spr{background:var(--purple-hi)}
 figcaption{font-size:.85rem;color:var(--muted);margin-top:.5rem}
 ul{padding-left:1.2rem}
-footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);font-style:italic}
-footer a{font-style:normal}
+footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--line);color:var(--muted)}
+.cafe{text-align:center;margin-bottom:25px}
+.cafecito-badge{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-size:.9em;background:var(--card);border:1px solid var(--purple);border-radius:999px;padding:8px 20px;transition:all .3s ease}
+.cafecito-badge:hover{border-color:var(--gold);background:#33263f}
+.cafecito-badge strong{color:var(--gold)}.cafecito-icon{font-size:1.7em;line-height:1}
+footer .legal{max-width:none;font-size:.8rem}footer .links{max-width:none;font-size:.85rem;text-align:center}
