@@ -31,3 +31,6 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--line);color
 .cafecito-badge:hover{border-color:var(--gold);background:#33263f}
 .cafecito-badge strong{color:var(--gold)}.cafecito-icon{font-size:1.7em;line-height:1}
 footer .legal{max-width:none;font-size:.8rem}footer .links{max-width:none;font-size:.85rem;text-align:center}
+.legend{list-style:none;padding:0;margin:.6rem 0 0;display:flex;flex-wrap:wrap;gap:.3rem 1.2rem;font-size:.85rem;color:var(--muted)}
+.legend i{display:inline-block;width:.8rem;height:.8rem;border-radius:2px;margin-right:.4rem;vertical-align:-1px}
+.legend .k{background:var(--green)}.legend .f{background:var(--gold)}.legend .s{background:var(--purple-hi)}
